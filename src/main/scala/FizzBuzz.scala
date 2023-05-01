@@ -9,9 +9,11 @@ class FizzBuzz:
     val isBuzz = number % 5 == 0
     val isFizzFizz = isFizz && number.toString.contains("3")
     val isBuzzBuzz = isBuzz && number.toString.contains("5")
+    val isFizzFizzBuzz = isFizz && number.toString.contains("3") && isBuzz
+    if isFizzFizzBuzz then return "FizzFizzBuzz"
+    if isFizzBuzz then return "FizzBuzz"
     if isFizzFizz then return "FizzFizz"
     if isBuzzBuzz then return "BuzzBuzz"
-    if isFizzBuzz then return "FizzBuzz"
     if isFizz then return "Fizz"
     if isBuzz then return "Buzz"
     number.toString
