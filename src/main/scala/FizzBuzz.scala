@@ -7,9 +7,10 @@ class FizzBuzz:
     val isFizzBuzz = number % 15 == 0
     val isFizz = number % 3 == 0
     val isBuzz = number % 5 == 0
-    val isFizzFizz = isFizz && number.toString.contains("3")
+    val containsThree = number.toString.contains("3")
+    val isFizzFizz = isFizz && containsThree
     val isBuzzBuzz = isBuzz && number.toString.contains("5")
-    val isFizzFizzBuzz = isFizz && number.toString.contains("3") && isBuzz
+    val isFizzFizzBuzz = isFizz && containsThree && isBuzz
     if isFizzFizzBuzz then return "FizzFizzBuzz"
     if isFizzBuzz then return "FizzBuzz"
     if isFizzFizz then return "FizzFizz"
