@@ -8,5 +8,8 @@ class FizzBuzzShould extends AnyFunSpec {
       assert(FizzBuzz().fromDigit(1) == "1")
       assert(FizzBuzz().fromDigit(7) == "7")
     }
+    it("given a fizz number"){
+      assert(FizzBuzz().fromDigit(3) == "Fizz")
+    }
   }
 }
