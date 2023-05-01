@@ -3,5 +3,9 @@ package dev.wolfremium.kata
 import org.scalatest.funspec.AnyFunSpec
 
 class FizzBuzzShould extends AnyFunSpec {
-
+  describe("determine what type it is") {
+    it("ignoring non fizz buzz numbers") {
+      assert(FizzBuzz().fromDigit(1) == "1")
+    }
+  }
 }
