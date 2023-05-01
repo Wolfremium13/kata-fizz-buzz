@@ -17,6 +17,9 @@ class FizzBuzzShould extends AnyFunSpec {
     it("given a buzz number"){
       assert(FizzBuzz().fromDigit(10) == "Buzz")
     }
+    it("given a buzz buzz number") {
+      assert(FizzBuzz().fromDigit(5) == "BuzzBuzz")
+    }
     it("given a fizz buzz number") {
       assert(FizzBuzz().fromDigit(60) == "FizzBuzz")
     }
