@@ -8,6 +8,9 @@ class FizzBuzzShould extends AnyFunSpec {
       assert(FizzBuzz().fromDigit(1) == "1")
       assert(FizzBuzz().fromDigit(7) == "7")
     }
+    it("and ignore numbers above 100") {
+      assert(FizzBuzz().fromDigit(101) == "")
+    }
     it("given a fizz number") {
       assert(FizzBuzz().fromDigit(6) == "Fizz")
     }
