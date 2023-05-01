@@ -4,6 +4,8 @@ import math.Integral.Implicits.infixIntegralOps
 
 class FizzBuzz:
   def fromDigit(number: Int): String =
+    val fizzBuzzLimit = 100
+    if number > fizzBuzzLimit then return ""
     val containsThree = number.toString.contains("3")
     val containsFive = number.toString.contains("5")
     val isFizz = number % 3 == 0
