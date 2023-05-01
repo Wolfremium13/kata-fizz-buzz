@@ -22,3 +22,7 @@ For example :
 
 53 should return FizzBuzz (contain 5 and 3)
 35 should return FizzBuzzBuzz (contain 3 and 5, and it divided by 5)
+
+# Testing library used
+
+- [ScalaTest](https://www.scalatest.org/install)
