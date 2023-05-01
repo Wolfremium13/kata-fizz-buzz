@@ -6,6 +6,7 @@ class FizzBuzzShould extends AnyFunSpec {
   describe("determine what type it is") {
     it("ignoring non fizz buzz numbers") {
       assert(FizzBuzz().fromDigit(1) == "1")
+      assert(FizzBuzz().fromDigit(7) == "7")
     }
   }
 }
